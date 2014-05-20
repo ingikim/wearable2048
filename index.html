@@ -2,19 +2,9 @@
 <html lang="en" manifest="cache.appcache">
 <head>
   <meta charset="utf-8">
-  <title>Wearable Weekly 2048</title>
+  <title>Wearable 2048</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
-
-  <!-- slick 
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" /> -->
-
-  <!-- bootstrap 
-  <link href="style/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="style/botstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="style/bootstrap-theme.css" rel="stylesheet" type="text/css">
-  <link href="style/bootstrap-theme.min.css" rel="stylesheet" type="text/css"> -->
-
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
@@ -55,16 +45,11 @@
     <div class="above-game">
       <p class="game-intro">
       <a class="restart-button">New Game</a>
-      Play Wearable 2048. Then, watch Wearable Weekly videos!
+      Play Wearable 2048. Then, watch Wearable Weekly Podcast!
       </p>
 
       
     </div>
-
-    <!-- <div class="pre-game">
-      <p class="learn">Play Wearable Weekly 2048. Then, watch Wearable Weekly about google glass and wearable technology!</p>
-    </div> -->
-
 
     <div class="game-container">
       <div class="game-message">
@@ -107,42 +92,24 @@
 
       </div>
     </div>
-
+    <div class="wearable-infographic">
+      <img class="wearable" src="style/ww_infographic.jpg">
+    </div>
     <div class="video-container">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/ManSkmTM0YA?rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <a class="learn" href="http://www.youtube.com/channel/UCeel7z4J9R4PCyPKdz3_8pQ/featured">Watch More Videos!</a>
     
-    
-    <!-- <p class="game-explanation">
-      <strong class="important">Make your own version:</strong> If you'd like to make your own version of this game, check out Udacity's newest course for beginners <a href="https://www.udacity.com/course/ud248" target="_blank">Make your own 2048</a>. No programming experience is required and in less than half an hour you'll dig into the source code, make some changes, and have your own version of the game to share.
-    </p> -->
     <hr>
     <p class="game-explanation">
       <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same character touch, they <strong>merge into one!</strong>
     </p>
     <hr>
     <p>
-    Modified by <a class="modify" href="http://ingikim.com/" target="_blank">Ingi Kim</a> and <a class="modify" href="http://milooy.wordpress.com/">Jay Jin</a>, based on <a class="modify" href="http://gabrielecirulli.github.io/2048/">2048</a> by <a class="modify" href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli</a>, which was in turn based on <a class="modify" href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a class="modify" href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+    Modified by <a class="modify" href="http://ingikim.com/" target="_blank">Ingi Kim</a> and designed by <a class="modify" href="http://milooy.wordpress.com/">Jay Jin</a>, based on <a class="modify" href="http://gabrielecirulli.github.io/2048/">2048</a> by <a class="modify" href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli</a>, which was in turn based on <a class="modify" href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a class="modify" href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
     </p>
     <div class="fb-like" data-href="http://ingikim.com" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
   </div>
-<!-- <div class="ingi">
-  <div class="image">
-    <img src="tile-sets/wearable-weekly/ww_1.jpg">
-  </div>
-  <div class="image">
-    <img src="tile-sets/wearable-weekly/ww_2.jpg">
-  </div>
-  <div class="image">
-    <img src="tile-sets/wearable-weekly/ww_3.jpg">
-  </div>        
-  <button type="button" class="slick-prev" style="display: block;">Previous</button>
-  <button type="button" class="slick-next" style="display: block;">Next</button>
-  <ul class="slick-dots" style="display: block;"><li class="slick-active"><button type="button">1</button></li><li class=""><button type="button">2</button></li><li class=""><button type="button">3</button></li></ul>
-</div> -->
-
-
 
   <script src="js/bind_polyfill.js"></script>
   <script src="js/classlist_polyfill.js"></script>
@@ -154,26 +121,6 @@
   <script src="js/local_storage_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
-<!--  <script src="js/bootstrap.js"></script>
-  <script src="js/bootstrap.min.js"></script -->
-
-  <!-- slick 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script> 
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.ingi').slick({
-          dots: true,
-          infinite: true,
-          speed: 500,
-          fade: true,
-          slide: '> div',
-          cssEase: 'linear'
-        });
-          });
-  </script> -->
         
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
