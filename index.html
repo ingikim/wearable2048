@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.appcache">
+<head>
+  <meta charset="utf-8">
+  <title>Wearable Weekly 2048</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+
+  <!-- slick 
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" /> -->
+
+  <!-- bootstrap 
+  <link href="style/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="style/botstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="style/bootstrap-theme.css" rel="stylesheet" type="text/css">
+  <link href="style/bootstrap-theme.min.css" rel="stylesheet" type="text/css"> -->
+
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="keywords" content="Google Glass, Wearable Device, All About Wearable Technology, Wearable Weekly">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="format-detection" content="telephone=no" />
+
+  <meta property="og:title" content="2048 game"/>
+  <meta property="og:site_name" content="Play Wearable Weekly 2048. Then, watch Wearable Weekly about google glass and wearable technology!"/>
+  <meta property="og:image" content="http://gabrielecirulli.github.io/2048/meta/og_image.png"/>
+</head>
+<body>
+
+<!-- facebook like -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=656957347711030&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">Wearable 2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">
+      <a class="restart-button">New Game</a>
+      Use your arrow keys or swipe to combine same character and get devices!
+      </p>
+
+      
+    </div>
+
+    <div class="pre-game">
+      <p class="learn">Play Wearable Weekly 2048. Then, watch Wearable Weekly about google glass and wearable technology!</p>
+    </div>
+
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a href="http://www.youtube.com/channel/UCeel7z4J9R4PCyPKdz3_8pQ/featured"class="learn learn-low">Watch the Videos!</a>
+          <a class="retry-button">Play Again</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ManSkmTM0YA?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <a class="learn" href="http://www.youtube.com/channel/UCeel7z4J9R4PCyPKdz3_8pQ/featured">Watch More Videos!</a>
+    
+    
+    <!-- <p class="game-explanation">
+      <strong class="important">Make your own version:</strong> If you'd like to make your own version of this game, check out Udacity's newest course for beginners <a href="https://www.udacity.com/course/ud248" target="_blank">Make your own 2048</a>. No programming experience is required and in less than half an hour you'll dig into the source code, make some changes, and have your own version of the game to share.
+    </p> -->
+    <hr>
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same character touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+    Modified by <a class="modify" href="http://ingikim.com/" target="_blank">Ingi Kim</a> and <a class="modify" href="http://milooy.wordpress.com/">Jay Jin</a>, based on <a class="modify" href="http://gabrielecirulli.github.io/2048/">2048</a> by <a class="modify" href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli</a>, which was in turn based on <a class="modify" href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a class="modify" href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+    </p>
+    <div class="fb-like" data-href="http://ingikim.com" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+  </div>
+<!-- <div class="ingi">
+  <div class="image">
+    <img src="tile-sets/wearable-weekly/ww_1.jpg">
+  </div>
+  <div class="image">
+    <img src="tile-sets/wearable-weekly/ww_2.jpg">
+  </div>
+  <div class="image">
+    <img src="tile-sets/wearable-weekly/ww_3.jpg">
+  </div>        
+  <button type="button" class="slick-prev" style="display: block;">Previous</button>
+  <button type="button" class="slick-next" style="display: block;">Next</button>
+  <ul class="slick-dots" style="display: block;"><li class="slick-active"><button type="button">1</button></li><li class=""><button type="button">2</button></li><li class=""><button type="button">3</button></li></ul>
+</div> -->
+
+
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+<!--  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script -->
+
+  <!-- slick 
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script> 
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.ingi').slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          slide: '> div',
+          cssEase: 'linear'
+        });
+          });
+  </script> -->
+        
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</body>
+</html>
